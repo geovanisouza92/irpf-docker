@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  irpf:
+    image: felipewer/irpf:2017
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME:/home/irpf
