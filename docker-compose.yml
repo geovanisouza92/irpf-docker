@@ -2,7 +2,7 @@ version: '3'
 
 services:
   irpf:
-    image: felipewer/irpf:2017
+    build: ./
     environment:
       - DISPLAY=$DISPLAY
     volumes:
