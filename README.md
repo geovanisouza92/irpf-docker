@@ -12,7 +12,7 @@ docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOM
 
 **Opção 1:** Utilize o compose:
 
-```
+```YAML
 version: '3'
 
 services:
