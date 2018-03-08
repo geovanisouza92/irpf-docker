@@ -1,4 +1,4 @@
-# IRPF - Programa de Declaração do Imposto sobre a Renda de Pessoa Física
+  # IRPF - Programa de Declaração do Imposto sobre a Renda de Pessoa Física
 
 Container Docker do programa que os brasileiros mais gostam de instalar todo ano.
 
@@ -17,7 +17,7 @@ version: '3'
 
 services:
   irpf:
-    image: felipewer/irpf:2017
+    image: felipewer/irpf
     environment:
       - DISPLAY=$DISPLAY
     volumes:
