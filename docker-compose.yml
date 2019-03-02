@@ -2,7 +2,8 @@ version: '3'
 
 services:
   irpf:
-    image: felipewer/irpf
+    # image: felipewer/irpf
+    build: .
     environment:
       - DISPLAY=$DISPLAY
     volumes:
