@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgtk2.0-0 libcanberra-gtk-module libxext-dev libxrender-dev libxtst-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget http://downloadirpf.receita.fazenda.gov.br/irpf/2019/irpf/arquivos/IRPF2019-1.5.zip -O irpf2019.zip \
+RUN wget http://downloadirpf.receita.fazenda.gov.br/irpf/2019/irpf/arquivos/IRPF2019-1.6.zip -O irpf2019.zip \
     && unzip irpf2019.zip -d /opt/ \
     && mv /opt/IRPF*/ /opt/irpf2019
 
