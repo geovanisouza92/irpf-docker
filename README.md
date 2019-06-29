@@ -1,26 +1,15 @@
-  # IRPF - Programa de Declaração do Imposto sobre a Renda de Pessoa Física
+# Programas da Receita Federal para apuração e declaração de imposto de renda
 
-Container Docker do programa que os brasileiros mais gostam de instalar todo ano.
+Container Docker dos programas que os brasileiros mais gostam de instalar todo ano.
 
-## Instruções:
-
-**Opção 1:** Rode manualmente:
+## via Docker Compose
 
 ```
-docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME:/home/irpf felipewer/irpf
+docker-compose up
 ```
 
-**Opção 2:** Utilize o compose:
+Isso abre os três programas (IRPF, GCAP E Carnê-leão), e caso queira abrir apenas um deles, pode usar:
 
-```YAML
-version: '3'
-
-services:
-  irpf:
-    image: felipewer/irpf
-    environment:
-      - DISPLAY=$DISPLAY
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      - $HOME:/home/irpf
-```
+- `docker-compose up irpf`
+- `docker-compose up gcap`
+- `docker-compose up leao`

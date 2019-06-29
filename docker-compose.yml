@@ -2,10 +2,29 @@ version: '3'
 
 services:
   irpf:
-    # image: felipewer/irpf
-    build: .
+    build:
+      context: .
+      dockerfile: irpf.dockerfile
     environment:
       - DISPLAY=$DISPLAY
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME:/home/irpf
+  gcap:
+    build:
+      context: .
+      dockerfile: gcap.dockerfile
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME:/home/gcap
+  leao:
+    build:
+      context: .
+      dockerfile: leao.dockerfile
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME:/home/leao
