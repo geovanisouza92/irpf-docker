@@ -13,4 +13,6 @@ RUN groupadd --gid 1000 irpf && \
 
 USER irpf
 
+ENV TZ=America/Sao_Paulo
+
 CMD ["java", "-Xms128M", "-Xmx512M", "-jar", "/opt/irpf2018/irpf.jar"]

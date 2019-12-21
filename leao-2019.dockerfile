@@ -13,4 +13,6 @@ RUN groupadd --gid 1000 leao && \
 
 USER leao
 
+ENV TZ=America/Sao_Paulo
+
 CMD ["java", "-Xms128M", "-Xmx512M", "-jar", "/opt/leao2019/PgdCarneLeao.jar"]

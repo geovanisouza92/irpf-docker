@@ -13,4 +13,6 @@ RUN groupadd --gid 1000 gcap && \
 
 USER gcap
 
+ENV TZ=America/Sao_Paulo
+
 CMD ["java", "-Xms128M", "-Xmx512M", "-jar", "/opt/gcap2019/GCAP.jar"]
