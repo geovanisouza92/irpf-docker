@@ -4,12 +4,12 @@ Container Docker dos programas que os brasileiros mais gostam de instalar todo a
 
 ## via Docker Compose
 
-```
-docker-compose up
-```
+- Use `docker-compose up irpf-2019` para iniciar o IRPF 2019
+- Use `docker-compose up gcap-2019` para iniciar o GCAP 2019
+- Use `docker-compose up leao-2019` para iniciar o Carnê-Leão 2019
 
-Isso abre os três programas (IRPF, GCAP E Carnê-leão), e caso queira abrir apenas um deles, pode usar:
+## Versões anteriores
 
-- `docker-compose up irpf`
-- `docker-compose up gcap`
-- `docker-compose up leao`
+Úteis para consultar declarações anteriores
+
+- Use `docker-compose up irpf-2018` para iniciar o IRPF 2018
