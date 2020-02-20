@@ -1,6 +1,15 @@
 version: '3'
 
 services:
+  irpf-2020:
+    build:
+      context: .
+      dockerfile: irpf-2020.dockerfile
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME:/home/irpf
   irpf-2019:
     build:
       context: .
