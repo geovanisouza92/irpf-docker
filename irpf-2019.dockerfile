@@ -1,7 +1,7 @@
 FROM openjdk:9
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    libgtk2.0-0 libcanberra-gtk-module libxext-dev libxrender-dev libxtst-dev \
+RUN apt-get update \
+    && apt-get install -o APT::Immediate-Configure=0 -y --no-install-recommends libgtk2.0-0 libcanberra-gtk-module libxext-dev libxrender-dev libxtst-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN wget http://downloadirpf.receita.fazenda.gov.br/irpf/2019/irpf/arquivos/IRPF2019-1.6.zip -O irpf2019.zip \
