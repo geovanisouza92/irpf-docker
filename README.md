@@ -4,12 +4,13 @@ Container Docker dos programas que os brasileiros mais gostam de instalar todo a
 
 ## via Docker Compose
 
-- Use `docker-compose up irpf-2021` para iniciar o IRPF 2021
+- Use `docker-compose up irpf-2022` para iniciar o IRPF 2022
 
 ## Versões anteriores
 
 Úteis para consultar declarações anteriores
 
+- Use `docker-compose up irpf-2021` para iniciar o IRPF 2021
 - Use `docker-compose up irpf-2020` para iniciar o IRPF 2020
 - Use `docker-compose up irpf-2019` para iniciar o IRPF 2019
 - Use `docker-compose up gcap-2019` para iniciar o GCAP 2019

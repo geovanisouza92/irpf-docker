@@ -4,7 +4,7 @@ RUN apt-get update \
     && apt-get install -o APT::Immediate-Configure=0 -y --no-install-recommends libgtk2.0-0 libcanberra-gtk-module libxext-dev libxrender-dev libxtst-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://downloadirpf.receita.fazenda.gov.br/irpf/2021/irpf/arquivos/IRPF2021-1.9.zip -O IRPF2021.zip
+RUN wget https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.0.zip -O IRPF2021.zip
 RUN unzip IRPF2021.zip -d /opt/
 
 RUN groupadd --gid 1000 irpf && \
